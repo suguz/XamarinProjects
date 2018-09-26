@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TicTacToe"
+             x:Class="TicTacToe.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" x:Name="button1" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="button2" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="0" Grid.Column="2" x:Name="button3" Clicked="button1_Clicked"></Button>
+
+        <Button Grid.Row="1" Grid.Column="0" x:Name="button4" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="button5" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="button6" Clicked="button1_Clicked"></Button>
+
+        <Button Grid.Row="2" Grid.Column="0" x:Name="button7" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="button8" Clicked="button1_Clicked"></Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="button9" Clicked="button1_Clicked"></Button>
+
+        <StackLayout Grid.Row="3" Grid.ColumnSpan="3" Orientation="Vertical">
+            <Label x:Name="label1">AAA</Label>
+            <Button Text="New Game" Clicked="Button_Clicked"></Button>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
